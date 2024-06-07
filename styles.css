@@ -1,0 +1,135 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: fadeInDown 2s ease forwards;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0, 123, 255, 0.8);
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    animation: fadeInUp 2s ease forwards;
+    opacity: 0;
+}
+
+button:hover {
+    background-color: rgba(0, 123, 255, 1);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
+
+button:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+button:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+button:nth-child(3) {
+    animation-delay: 0.7s;
+}
+
+button:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+button:nth-child(5) {
+    animation-delay: 0.9s;
+}
+
+.contact-links {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.contact-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+    color: #007bff;
+}
+
+.info {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
